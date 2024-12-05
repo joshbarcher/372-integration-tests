@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-app.get('/api/v1/products', (req, res) => {
+app.get('/api/v1/product', (req, res) => {
     res.status(200).json({
         status: "success",
         data: [
