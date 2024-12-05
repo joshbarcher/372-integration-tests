@@ -4,13 +4,13 @@ import request from 'supertest';
 describe('Products endpoint', () => {
     test('should be available', async () => {
         const response = await request(app)
-            .get('/api/v1/products')
+            .get('/api/v1/product')
             .expect(200);
     })
     
     test('should return correct data', async () => {
         const response = await request(app)
-            .get('/api/v1/products')
+            .get('/api/v1/product')
             .expect(200);
     
         expect(response.body.status).toBe("success");
